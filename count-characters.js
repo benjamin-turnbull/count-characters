@@ -1,11 +1,11 @@
-function countBs(string) {
-	let Bs = 0;
+function countBs(string, ch) {
+	let characters = 0;
 	for (i = 0; i < string.length; i++) {
-		if (string[i] == "B") {
-			Bs++;
+		if (string[i] == ch) {
+			characters++;
 		}
 	}
-	return Bs;
+	return characters;
 }
 
-console.log(countBs("BuBBles"));
+console.log(countBs("BuBBles", "B"));
